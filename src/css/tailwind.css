@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-text {
+  @apply hover:cursor-pointer;
+}
+
+.nav-icons {
+  @apply hover:cursor-pointer;
+}
+
+.header-btn {
+  @apply text-base text-primary font-bold bg-white w-48 h-12 rounded-3xl transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110;
+}
+
+.toggle-checkbox:checked {
+  @apply: right-0 border-green-400;
+  right: 0;
+  border-color: #cc2d4a;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-green-400;
+  background-color: #cc2d4a;
+}
+
+.cards-scroll-container {
+  @apply w-auto h-[30rem]  mt-6 px-7  overflow-x-auto overscroll-x-contain snap-x  flex justify-between space-x-16 scrollbar-thin scrollbar-thumb-custom-default scrollbar-track-custom-light dark:scrollbar-thumb-white dark:scrollbar-track-gray-900 scrollbar-thumb-rounded-full;
+}
+
+.card-green {
+  @apply lg:w-[22rem] lg:h-[26rem] sm:w-[20rem] sm:h-[24rem] bg-secondary rounded-xl overflow-hidden snap-center shadow-2xl flex-none transform transition-all hover:-translate-y-4 hover:shadow self-center dark:bg-gray-800;
+}
+
+.card-white {
+  @apply lg:w-[22rem] lg:h-[26rem] sm:w-[20rem] sm:h-[24rem] bg-white rounded-xl overflow-hidden snap-center shadow-2xl flex-none transform transition-all hover:-translate-y-4 hover:shadow self-center dark:bg-gray-700;
+}
+
+.card-title-white {
+  @apply font-bold text-xl text-white;
+}
+
+.card-title-blue {
+  @apply font-bold text-xl text-tertiary dark:text-white;
+}
+
+.card-text {
+  @apply text-white;
+}
+
+.grid-item-1 {
+  @apply w-full lg:h-[41rem] sm:h-[25rem] row-start-1 row-end-2 col-start-1 col-end-4 bg-chicago bg-center sm:bg-cover rounded-xl overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-2xl hover:cursor-pointer;
+}
+
+.grid-item-2 {
+  @apply w-full lg:h-[52rem] sm:h-[25rem] row-start-2 row-end-4 col-start-1 col-end-2 bg-LA bg-center sm:bg-cover rounded-xl overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-2xl hover:cursor-pointer;
+}
+
+.grid-item-3 {
+  @apply w-full lg:h-[25rem] sm:h-[25rem] row-start-2 row-end-3 col-start-2 col-end-4 bg-miami bg-center sm:bg-cover rounded-xl overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-2xl hover:cursor-pointer;
+}
+
+.grid-item-4 {
+  @apply w-full lg:h-[25rem] sm:h-[25rem] row-start-3 row-end-4 col-start-2 col-end-4 bg-bali bg-center sm:bg-cover rounded-xl overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-2xl hover:cursor-pointer;
+}
+
+.footer-text {
+  @apply text-xl text-white transform transition-all hover:text-2xl hover:cursor-pointer;
+}

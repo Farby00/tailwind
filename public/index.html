@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>platzi travel</title>
+  </head>
+  <body class="font-montserrat">
+    <header class="w-full lg:h-[41rem] bg-gray-400" id="home">
+      <nav
+        class="w-full h-[4rem] fixed z-50 bg-white flex justify-between items-center px-5 font-bold text-primary lg:flex sm:hidden dark:bg-gray-900 dark:text-white"
+      >
+        <div><p>Platzi Travel</p></div>
+        <div class="flex space-x-5">
+          <a href="#recomendations" class="nav-text">Locations</a>
+          <a href="#sytes" class="nav-text">Sytes</a>
+          <a href="#FaQs" class="nav-text">FaQs</a>
+          <a href="#about-us" class="nav-text">About Us</a>
+        </div>
+        <div class="flex space-x-3">
+          <svg
+            class="nav-icons dark:fill-white"
+            width="29"
+            height="29"
+            viewBox="0 0 29 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.0833 3.625C7.41192 3.625 3.625 7.41192 3.625 12.0833C3.625 16.7547 7.41192 20.5417 12.0833 20.5417C13.9832 20.5417 15.7368 19.9153 17.1489 18.8577L22.104 23.8128C22.5759 24.2847 23.341 24.2847 23.8128 23.8128C24.2847 23.341 24.2847 22.5759 23.8128 22.104L18.8577 17.1489C19.9153 15.7368 20.5417 13.9832 20.5417 12.0833C20.5417 7.41192 16.7547 3.625 12.0833 3.625ZM6.04167 12.0833C6.04167 8.74661 8.74661 6.04167 12.0833 6.04167C15.4201 6.04167 18.125 8.74661 18.125 12.0833C18.125 15.4201 15.4201 18.125 12.0833 18.125C8.74661 18.125 6.04167 15.4201 6.04167 12.0833Z"
+              fill="#CC2D4A"
+            />
+          </svg>
+          <button id="toggle">
+            <svg
+              class="nav-icons"
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.0748 19.2748C22.9267 20.2465 20.5334 20.5405 18.214 20.1177C15.8945 19.6949 13.7589 18.5753 12.0918 16.9082C10.4246 15.241 9.30509 13.1055 8.88228 10.786C8.45946 8.46654 8.75347 6.0733 9.72512 3.92514C8.01494 4.69801 6.51777 5.87422 5.36208 7.35288C4.20638 8.83154 3.42666 10.5685 3.08979 12.4147C2.75293 14.261 2.86898 16.1614 3.428 17.9529C3.98702 19.7444 4.97232 21.3736 6.29935 22.7006C7.62639 24.0276 9.25556 25.0129 11.0471 25.572C12.8386 26.131 14.739 26.247 16.5852 25.9102C18.4315 25.5733 20.1684 24.7936 21.6471 23.6379C23.1257 22.4822 24.302 20.985 25.0748 19.2748V19.2748Z"
+                fill="#CC2D4A"
+              />
+            </svg>
+          </button>
+
+          <svg
+            class="nav-icons"
+            width="28"
+            height="29"
+            viewBox="0 0 28 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.22273 18.379C6.75609 16.1651 9.47174 14.5 13.9999 14.5C18.5281 14.5 21.2438 16.1651 22.7772 18.379C24.2591 20.5187 24.4952 22.9711 24.4999 24.3281C24.5046 25.6927 23.4 26.5834 22.2676 26.5834H5.7323C4.59984 26.5834 3.49528 25.6927 3.50002 24.3281C3.50473 22.9711 3.74077 20.5187 5.22273 18.379Z"
+              fill="#FF1C45"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.0001 12.0834C16.5774 12.0834 18.6667 9.9194 18.6667 7.25002C18.6667 4.58064 16.5774 2.41669 14.0001 2.41669C11.4227 2.41669 9.33339 4.58064 9.33339 7.25002C9.33339 9.9194 11.4227 12.0834 14.0001 12.0834Z"
+              fill="#FF1C45"
+            />
+          </svg>
+        </div>
+      </nav>
+      <section
+        class="w-full h-[41rem] bg-sanFranciscoDesktop bg-cover bg-center flex flex-col justify-center sm:items-center sm:justify-evenly lg:items-start lg:pl-9 md:space-y-8 sm:space-y-96"
+      >
+        <div class="w-full flex flex-col justify-center sm:items-center">
+          <div
+            class="relative inline-block w-10 mr-4 -mt-12 mb-4 align-middle select-none transition duration-400 ease-in self-end lg:hidden"
+          >
+            <input
+              type="checkbox"
+              name="toggle"
+              id="toggle-sm"
+              class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-2 appearance-none cursor-pointer"
+            />
+            <label
+              for="toggle"
+              class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-100 border-solid border-gray-300 border cursor-pointer"
+            ></label>
+          </div>
+          <input
+            class="outline-none p-3 rounded-full shadow-sm transition duration-600 focus:ring-2 focus:w-11/12 md:w-11/12 lg:hidden"
+            type="search"
+            placeholder="San Francisco"
+          />
+        </div>
+        <h1 class="w-[25rem] text-4xl text-black font-bold sm:hidden lg:block xl:block">
+          Find More Locations like this
+        </h1>
+        <button class="header-btn">Explore more</button>
+      </section>
+    </header>
+    <main class="w-full bg-white dark:bg-gray-900">
+      <h2 class="text-primary font-bold text-4xl p-6 pt-6 dark:text-white">
+        Our Recomendations
+      </h2>
+      <section class="cards-scroll-container" id="recomendations">
+        <div class="card-green">
+          <img class="w-full h-3/5" src="img/norway.jpg" alt="imagen de Noruega" />
+          <div class="h-full space-y-4 m-2">
+            <h4 class="card-title-white">Norway</h4>
+            <p class="text-white">Beautiful landscapes</p>
+          </div>
+        </div>
+        <div class="card-white">
+          <img class="w-full h-3/5" src="img/new_york.jpg" alt="imagen de New york" />
+          <div class="h-full space-y-4 m-2">
+            <h4 class="card-title-blue">New York</h4>
+            <p class="text-tertiary dark:text-white">Concrete jungle</p>
+          </div>
+        </div>
+        <div class="card-green">
+          <img class="w-full h-3/5" src="img/yosemite.jpg" alt="imagen de Yosemite" />
+          <div class="h-full space-y-4 m-2">
+            <h4 class="card-title-white">Yosemite</h4>
+            <p class="text-white">A break from the world</p>
+          </div>
+        </div>
+        <div class="card-white">
+          <img class="w-full h-3/5" src="img/seattle.jpg" alt="imagen de Seattle" />
+          <div class="h-full space-y-4 m-2">
+            <h4 class="card-title-blue">Seattle</h4>
+            <p class="text-tertiary dark:text-white">Big city</p>
+          </div>
+        </div>
+        <div class="card-green">
+          <img class="w-full h-3/5" src="img/switzerland.jpg" alt="imagen de Suiza" />
+          <div class="h-full space-y-4 m-2">
+            <h4 class="card-title-white">Switzerland</h4>
+            <p class="text-white">Beatiful ville</p>
+          </div>
+        </div>
+      </section>
+      <h2 class="text-primary font-bold text-4xl p-6 mt-6 dark:text-white" id="sytes">
+        Trending Stays
+      </h2>
+      <section
+        class="m-8 sm:m-6 gap-10 lg:grid xl:grid grid-cols-3 grid-rows-3 sm:flex sm:flex-col"
+      >
+        <div class="grid-item-1">
+          <div class="flex flex-col items-end sm:items-start m-8">
+            <h3 class="font-bold text-white text-4xl sm:text-2xl">Chicago</h3>
+            <p class="text-white text-lg">2 rooms, bathroom and kitchen</p>
+          </div>
+        </div>
+        <div class="grid-item-2">
+          <div class="flex flex-col items-end sm:items-start m-8">
+            <h3 class="font-bold text-white text-4xl sm:text-2xl">Los Angeles</h3>
+            <p class="text-white text-xl">
+              4 rooms, 3 bathrooms, kitchen and private pool.
+            </p>
+          </div>
+        </div>
+        <div class="grid-item-3">
+          <div class="flex flex-col items-end sm:items-start m-8">
+            <h3 class="font-bold text-white text-4xl sm:text-2xl">Miami</h3>
+            <p class="text-white text-xl">
+              3 rooms, 2 bathrooms, kitchen and amazing sea view.
+            </p>
+          </div>
+        </div>
+        <div class="grid-item-4">
+          <div class="flex flex-col items-end sm:items-start m-8">
+            <h3 class="font-bold text-white text-4xl sm:text-2xl">Bali</h3>
+            <p class="text-white text-xl">
+              2 rooms, 2 bathrooms Kitchen and private pool
+            </p>
+          </div>
+        </div>
+      </section>
+      <h2
+        class="text-primary font-bold text-4xl lg:ml-9 sm:ml-6 dark:text-white"
+        id="FaQs"
+      >
+        FaQs
+      </h2>
+      <section class="lg:space-y-[6rem] sm:space-y-[3rem] py-6 sm:m-auto sm:px-6">
+        <div>
+          <h3
+            class="lg:text-4xl sm:text-lg font-semibold mt-3 text-primary dark:text-white"
+          >
+            Payment Methods
+          </h3>
+          <p class="lg:text-2xl sm:text-sm dark:text-white">
+            We accept VISA, MasterCard, American Express, Paypal and Binance, We accept
+            VISA, MasterCard, American Express, Paypal and Binance.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="lg:text-4xl sm:text-lg font-semibold text-primary dark:text-white">
+            Cancellation Policy
+          </h3>
+          <p class="lg:text-2xl sm:text-sm dark:text-white">
+            We accept VISA, MasterCard, American Express, Paypal and Binance
+          </p>
+        </div>
+
+        <div>
+          <h3 class="lg:text-4xl sm:text-lg font-semibold text-primary dark:text-white">
+            Long Stays
+          </h3>
+          <p class="lg:text-2xl sm:text-sm dark:text-white">
+            We accept VISA, MasterCard, American Express, Paypal and Binance, We accept
+            VISA, MasterCard, American Express, Paypal and Binance.
+          </p>
+        </div>
+        <div>
+          <h3 class="lg:text-4xl sm:text-lg font-semibold text-primary dark:text-white">
+            Privacy protocols
+          </h3>
+          <p class="lg:text-2xl sm:text-sm dark:text-white">
+            We accept VISA, MasterCard, American Express, Paypal and Binance, We accept
+            VISA, MasterCard, American Express, Paypal and Binance.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="w-full h-[28.5rem] xl:h-[28.5rem] flex flex-col justify-center py-9 sm:mb-14 lg:mb-0 pl-9 sm:pl-6 space-y-6 bg-primary"
+      id="about-us"
+    >
+      <h2 class="text-3xl text-white mt-3">About Us</h2>
+      <p class="footer-text">Investors</p>
+      <p class="footer-text">Jobs</p>
+      <p class="footer-text">Privacy policy</p>
+      <p class="footer-text">Terms and Conditions</p>
+      <p class="footer-text">Platzi Travel, inc</p>
+      <p class="footer-text">Follow Us</p>
+      <div class="flex gap-5">
+        <svg
+          class="fill-white hover:fill-black hover:cursor-pointer"
+          width="29"
+          height="29"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+          />
+        </svg>
+        <svg
+          class="fill-white hover:fill-black hover:cursor-pointer"
+          width="29"
+          height="29"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+          />
+        </svg>
+      </div>
+    </footer>
+    <div
+      class="sm:w-full sm:h-16 flex justify-evenly items-center bg-white fixed left-0 bottom-0 shadow-md lg:hidden dark:bg-gray-700"
+      id="tab-bar"
+    >
+      <a href="#home">
+        <svg
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="hover:fill-red-500"
+            s
+            d="M17.0159 3.03837C16.7669 2.75451 16.4034 2.58866 16.0189 2.58338C15.6344 2.57811 15.2662 2.73393 15.009 3.01084L3.00896 15.9275C2.65672 16.3067 2.5678 16.8511 2.78202 17.3171C2.99624 17.7831 3.47347 18.0833 4.00002 18.0833H6.66669V25.8333C6.66669 26.5466 7.26364 27.1249 8.00002 27.1249H13.3334V20.6666H18.6667V27.1249H24C24.7364 27.1249 25.3334 26.5466 25.3334 25.8333V18.0833H27.3334C27.8531 18.0833 28.3254 17.7907 28.5436 17.3337C28.7617 16.8768 28.6859 16.3387 28.3493 15.955L17.0159 3.03837Z"
+            fill="#CFCFCF"
+          />
+        </svg>
+      </a>
+      <a href="#recomendations">
+        <svg
+          width="31"
+          height="31"
+          viewBox="0 0 31 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="hover:fill-red-500"
+            d="M12.9167 3.875C7.92309 3.875 3.875 7.92309 3.875 12.9167C3.875 17.9102 7.92309 21.9583 12.9167 21.9583C14.9476 21.9583 16.8221 21.2887 18.3316 20.1582L23.6284 25.4551C24.1328 25.9595 24.9507 25.9595 25.4551 25.4551C25.9595 24.9507 25.9595 24.1328 25.4551 23.6284L20.1582 18.3316C21.2887 16.8221 21.9583 14.9476 21.9583 12.9167C21.9583 7.92309 17.9102 3.875 12.9167 3.875ZM6.45833 12.9167C6.45833 9.34983 9.34983 6.45833 12.9167 6.45833C16.4835 6.45833 19.375 9.34983 19.375 12.9167C19.375 16.4835 16.4835 19.375 12.9167 19.375C9.34983 19.375 6.45833 16.4835 6.45833 12.9167Z"
+            fill="#CFCFCF"
+          />
+        </svg>
+      </a>
+      <a href="#sytes">
+        <svg
+          width="31"
+          height="31"
+          viewBox="0 0 31 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="hover:fill-red-500"
+            d="M8.88589 5.1598C11.6963 4.45703 13.5415 5.33633 14.6651 6.45988C14.7875 6.58226 14.9006 6.7068 15.0051 6.83153C15.1278 6.97802 15.3091 7.06265 15.5002 7.06265C15.6913 7.06265 15.8726 6.97802 15.9953 6.83153C16.0998 6.70679 16.2129 6.58225 16.3353 6.45988C17.4589 5.33629 19.3043 4.45705 22.1153 5.1598C24.9229 5.86173 27.0419 7.97284 27.7491 10.6252C28.461 13.2953 27.7249 16.433 24.9982 19.1597C21.9813 22.1766 19.4061 24.7531 17.7854 26.3748C16.5244 27.6366 14.4827 27.6372 13.2211 26.3759L6.00388 19.1597C3.27608 16.4324 2.53997 13.2946 3.25217 10.6246C3.9596 7.9724 6.07894 5.86172 8.88589 5.1598Z"
+            fill="#CFCFCF"
+          />
+        </svg>
+      </a>
+      <a href="#about-us">
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="hover:fill-red-500"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M14.243 5.75696C13.442 4.95639 12.4307 4.39888 11.3261 4.14888C10.2215 3.89888 9.06874 3.96661 8.00103 4.34423C6.93332 4.72185 5.99429 5.39395 5.29249 6.28282C4.5907 7.17168 4.1548 8.24102 4.03519 9.36721C3.91559 10.4934 4.11716 11.6304 4.6166 12.6469C5.11604 13.6633 5.89296 14.5177 6.85754 15.1111C7.82212 15.7046 8.93496 16.0129 10.0674 16.0005C11.1999 15.9881 12.3057 15.6554 13.257 15.041C13.3671 14.9655 13.4913 14.9128 13.6221 14.886C13.7529 14.8592 13.8878 14.859 14.0187 14.8852C14.1496 14.9113 14.274 14.9635 14.3844 15.0385C14.4949 15.1136 14.5892 15.21 14.6618 15.322C14.7344 15.4341 14.7838 15.5596 14.8071 15.691C14.8305 15.8225 14.8272 15.9573 14.7976 16.0875C14.768 16.2177 14.7126 16.3407 14.6347 16.4491C14.5568 16.5576 14.4579 16.6493 14.344 16.719C12.8507 17.6846 11.0783 18.1251 9.30667 17.971C7.53508 17.8169 5.86533 17.0769 4.56121 15.8679C3.2571 14.6589 2.39298 13.0499 2.10535 11.2951C1.81772 9.54018 2.12299 7.73949 2.97293 6.17747C3.82288 4.61545 5.16903 3.38114 6.79874 2.66954C8.42844 1.95794 10.2488 1.80962 11.9722 2.24801C13.6956 2.6864 15.2238 3.6865 16.3154 5.09033C17.407 6.49416 17.9998 8.22167 18 9.99996C18.0002 10.5572 17.8452 11.1034 17.5524 11.5775C17.2595 12.0516 16.8405 12.4347 16.3421 12.684C15.8437 12.9333 15.2858 13.0389 14.7308 12.9889C14.1759 12.9389 13.6458 12.7353 13.2 12.401C12.6302 13.1608 11.8085 13.693 10.8822 13.9025C9.95579 14.1119 8.98511 13.9849 8.14381 13.5442C7.3025 13.1035 6.64547 12.3777 6.29028 11.4969C5.93508 10.6161 5.90489 9.63759 6.20512 8.73653C6.50535 7.83547 7.1164 7.07064 7.92893 6.57888C8.74147 6.08713 9.70248 5.90054 10.64 6.05249C11.5775 6.20445 12.4304 6.68505 13.046 7.40828C13.6616 8.13152 13.9998 9.05021 14 9.99996C14 10.2652 14.1054 10.5195 14.2929 10.7071C14.4804 10.8946 14.7348 11 15 11C15.2652 11 15.5196 10.8946 15.7071 10.7071C15.8947 10.5195 16 10.2652 16 9.99996C16 8.46297 15.414 6.92996 14.243 5.75696ZM12 9.99996C12 9.46953 11.7893 8.96082 11.4142 8.58575C11.0392 8.21068 10.5304 7.99996 10 7.99996C9.46958 7.99996 8.96087 8.21068 8.5858 8.58575C8.21073 8.96082 8.00001 9.46953 8.00001 9.99996C8.00001 10.5304 8.21073 11.0391 8.5858 11.4142C8.96087 11.7893 9.46958 12 10 12C10.5304 12 11.0392 11.7893 11.4142 11.4142C11.7893 11.0391 12 10.5304 12 9.99996Z"
+            fill="#CFCFCF"
+          />
+        </svg>
+      </a>
+    </div>
+    <script>
+      const htmlElement = document.querySelector("html");
+      const toggleButton = document.querySelector("#toggle");
+      const toggleButtonSm = document.querySelector("#toggle-sm");
+
+      toggleButton.addEventListener("click", () => {
+        htmlElement.classList.toggle("dark");
+      });
+
+      toggleButtonSm.addEventListener("click", () => {
+        htmlElement.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
